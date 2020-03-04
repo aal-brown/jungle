@@ -2,6 +2,12 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
+    
+    @products = [];
+    @order.line_items.each { |item|
+      @products.push(Product.find(item.product_id))  
+    }
+    render "show", order: @order
   end
 
   def create
@@ -41,6 +47,8 @@ class OrdersController < ApplicationController
       total_cents: cart_subtotal_cents,
       stripe_charge_id: stripe_charge.id, # returned by stripe
     )
+
+    @cartContents = enhanced_cart
 
     enhanced_cart.each do |entry|
       product = entry[:product]
