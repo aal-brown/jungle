@@ -2,12 +2,6 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
-    
-    @products = [];
-    @order.line_items.each { |item|
-      @products.push(Product.find(item.product_id))  
-    }
-    render "show", order: @order
   end
 
   def create
