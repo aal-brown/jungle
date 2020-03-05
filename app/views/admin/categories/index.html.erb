@@ -1,0 +1,16 @@
+<h1>Categories</h1>
+
+<div class="well">
+    <%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-info' %>
+  </div>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Category Name</th>
+      <th>Category ID</th>
+      <th>Date Created</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @categories, category: @categories %>
+  </tbody>
