@@ -9,9 +9,30 @@
 // Global
 body {
   padding-top: 70px;
+  background-color: rgb(187, 187, 80);
 }
 
 // Bootstrap adjustments
 form.button_to {
   display: inline;
+}
+
+.about-page {
+  margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  background-image: url("https://pixabay.com/get/57e7d0454c51a514ea9d8578c52e337b1239c3e45659724a732772d297/banner-1756639.jpg");
+  color: #ffffff;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
 }
