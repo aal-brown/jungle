@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     root to: 'dashboard#show'
     resources :products, except: [:edit, :update, :show]
     resources :categories, only: [:index, :new, :create]
+    resources :sales, only: [:index, :new]
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -27,6 +28,14 @@ Rails.application.routes.draw do
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
   get 'about' => 'about#show'
+
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
+  get "/signup" => "users#new"
+  post "/users" => "users#create"
+
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

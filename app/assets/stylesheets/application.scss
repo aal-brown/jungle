@@ -25,7 +25,8 @@ form.button_to {
 }
 
 .navbar {
-  background-image: url("https://pixabay.com/get/57e7d0454c51a514ea9d8578c52e337b1239c3e45659724a732772d297/banner-1756639.jpg");
+  background-color: rgb(50, 156, 50);
+  /* background-image: url("https://pixabay.com/get/57e7d0454c51a514ea9d8578c52e337b1239c3e45659724a732772d297/banner-1756639.jpg"); */
   color: #ffffff;
 }
 
@@ -36,3 +37,8 @@ form.button_to {
 .navbar-default .navbar-nav > li > a {
   color: #ffffff;
 }
+
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+
