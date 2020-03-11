@@ -7,6 +7,12 @@ class OrdersController < ApplicationController
     @order.line_items.each { |item|
       @products.push(Product.find(item.product_id))  
     }
+
+    @userid = session[:user_id]
+    @user = User.find(@userid)
+
+   message = UserMailer.order_email(@order, @user)
+   message.deliver_now
     render "show", order: @order
   end
 
