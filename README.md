@@ -28,10 +28,13 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Final Product
 
-!["Screenshot of main page (logged-in)"](https://github.com/aal-brown/tinyapp/blob/master/docs/main-page-logged-in.png)
-!["Screenshot of about page"]()
-!["Screenshot of cart"]()
-!["Screenshot of payment window"]()
-!["Screenshot of new url page"]()
-!["Screenshot of login page"]()
-!["Screenshot of shortened url page"]()
+!["Screenshot of main products page"](https://github.com/aal-brown/jungle/blob/master/app/assets/images/products-page.png)
+!["Screenshot of product details page"](https://github.com/aal-brown/jungle/blob/master/app/assets/images/product-details-page.png)
+!["Screenshot of about page"](https://github.com/aal-brown/jungle/blob/master/app/assets/images/about-page.png)
+!["Screenshot of cart"](https://github.com/aal-brown/jungle/blob/master/app/assets/images/cart.png)
+!["Screenshot of payment window"](https://github.com/aal-brown/jungle/blob/master/app/assets/images/payment-window-from-cart.png)
+!["Screenshot of order summary"](https://github.com/aal-brown/jungle/blob/master/app/assets/images/successful-order-summary.png)
+!["Screenshot of admin dashboard"](https://github.com/aal-brown/jungle/blob/master/app/assets/images/admin-dashboard.png)
+!["Screenshot of admin categories page"](https://github.com/aal-brown/jungle/blob/master/app/assets/images/admin-categories.png)
+!["Screenshot of admin products page"](https://github.com/aal-brown/jungle/blob/master/app/assets/images/admin-products.png)
+!["Screenshot of admin sales page"](https://github.com/aal-brown/jungle/blob/master/app/assets/images/admin-sales.png)
